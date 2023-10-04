@@ -18,20 +18,27 @@ body {
 
 /* Style the header */
 header {
-    background-color: transparent;
+    background: #5cbed73a;
+    background-color: semi-transparent;
     color: #FFF;
-    padding: 10px 0;
+    padding: 15px 0 15px 0;
+    border-radius: 38px;
+    backdrop-filter: blur(5px);
+}
+
+header h1 {
+padding-top: 25px;
 }
 
 #better-call {
-    font-size: 70px;
+    font-size: 95px;
     font-family: trebuchet ms, sans-serif;
     color: yellow;
     text-shadow: 2px 2px 4px black; 
   }
   
   #mack {
-    font-size: 85px;
+    font-size: 125px;
     font-family: "brush script mt", cursive;/* Replace Arial with whatever other font you'd like */
     color: red;
     text-shadow: 2px 2px 4px black; 
@@ -40,22 +47,55 @@ header {
 /* Style the navigation bar */
 
 /* Style the navigation menu */
-nav ul {
-    background-color: #E9E917; 
-    overflow: hidden;
-    color: red;
+.main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
 }
 
-nav ul li {
-    float: center;
-    display: inline;
-    padding: 14px 16px;
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right, rgba(178, 114, 18, 0.7), rgba(228, 225, 9, 0.7));
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid #060808;
+    border-bottom-left-radius: 10px; /* Round out the bottom-left corner */
+    border-bottom-right-radius: 10px;
+}
+
+.main-nav li {
+    font-size: larger;
+    padding: 14px 26px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    font-family: "brush script mt", cursive;
+    font-size: larger;
     color: red;
+    padding: 14px 16px;
+    transition: background-color 0.3s;
+}
+
+.main-nav a:hover {
+    background-color: #d1d10d; /* Slightly darkened yellow */
 }
 
 /* Add some padding and background color to the main content */
 main {
-    padding: 20px;
+    padding: 10px;
     background-color: transparent;
 }
 
@@ -76,12 +116,23 @@ main {
 }
 
 #poster {
+    background: linear-gradient(to right, rgba(178, 114, 18, 0.7), rgba(228, 225, 9, 0.7));
+    background-color: semi-transparent;
     display: block; /* Block level element */
-    margin: 0 auto; /* Center the element horizontally */
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
     max-width: 90%; /* Ensure it's not too wide for its container */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    border-radius: 8px; /* Optional: Rounded corners */
+    border-radius: 38px; /* Optional: Rounded corners */
     object-fit: cover; /* Ensure image covers the space without distortion */
+    backdrop-filter: blur(5px);
+}
+
+#main-poster {
+    border-radius: 38px;
+    border:2px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 #joke {
@@ -131,6 +182,14 @@ ul {
     list-style-type: none;
 }
 
+#services {
+    background: linear-gradient(to right, rgba(178, 114, 18, 0.7), rgba(228, 225, 9, 0.7));
+    background-color: semi-transparent;
+    padding: 15px 0 15px 0;
+    border-radius: 35px;
+    backdrop-filter: blur(5px);
+}
+
 #services h2 {
     font-family: "brush script mt", cursive;
     font-size: 90px;
@@ -142,6 +201,14 @@ ul {
     color:yellow;
 }
 
+#contact {
+    background: linear-gradient(to right, rgba(178, 114, 18, 0.7), rgba(228, 225, 9, 0.7));
+    background-color: semi-transparent;
+    padding: 15px 0 15px 0;
+    border-radius: 35px;
+    backdrop-filter: blur(5px);
+}
+
 #contact h2 {
     font-family: "brush script mt", cursive;
     font-size: 90px;
@@ -151,4 +218,12 @@ ul {
 #contact p {
     font-size: 35px;
     color:yellow;
+}
+
+#about {
+    background: linear-gradient(to right, rgba(178, 114, 18, 0.7), rgba(228, 225, 9, 0.7));
+    background-color: semi-transparent;
+    padding: 15px 0 15px 0;
+    border-radius: 38px;
+    backdrop-filter: blur(5px);
 }
