@@ -1,0 +1,154 @@
+/* Reset some default browser styles */
+body, h1, h2, ul, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Add a background color and some padding around the whole page */
+body {
+    background-image: url('assets/betterCallMack.png'); /* Add this line */
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: #F4F4F4;
+    color: #333;
+    margin: 20px;
+    text-align: center;
+}
+
+/* Style the header */
+header {
+    background-color: transparent;
+    color: #FFF;
+    padding: 10px 0;
+}
+
+#better-call {
+    font-size: 70px;
+    font-family: trebuchet ms, sans-serif;
+    color: yellow;
+    text-shadow: 2px 2px 4px black; 
+  }
+  
+  #mack {
+    font-size: 85px;
+    font-family: "brush script mt", cursive;/* Replace Arial with whatever other font you'd like */
+    color: red;
+    text-shadow: 2px 2px 4px black; 
+  }  
+
+/* Style the navigation bar */
+
+/* Style the navigation menu */
+nav ul {
+    background-color: #E9E917; 
+    overflow: hidden;
+    color: red;
+}
+
+nav ul li {
+    float: center;
+    display: inline;
+    padding: 14px 16px;
+    color: red;
+}
+
+/* Add some padding and background color to the main content */
+main {
+    padding: 20px;
+    background-color: transparent;
+}
+
+#about-button, #services-button, #contact-button {
+    color: rgb(184, 18, 18);
+    padding: 70px;
+
+}
+
+#about-p {
+    font-size: 40px;
+    font-family: "brush script mt", cursive;/* Replace Arial with whatever other font you'd like */
+    color: yellow;
+}
+
+#sub-about-p {
+    font-size: 15px;
+}
+
+#poster {
+    display: block; /* Block level element */
+    margin: 0 auto; /* Center the element horizontally */
+    max-width: 90%; /* Ensure it's not too wide for its container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 8px; /* Optional: Rounded corners */
+    object-fit: cover; /* Ensure image covers the space without distortion */
+}
+
+#joke {
+    font-size: 40px;/* Replace Arial with whatever other font you'd like */
+    text-align: center;
+    padding: 20px 0px 20px 0px; 
+}
+
+#joke-bp {
+    font-size: 23px;
+    text-align: center;
+    padding: 20px 0px 40px 0px;
+}
+
+#joke-sect {
+    background-color: rgb(188, 188, 22);
+    color:rgb(184, 18, 18);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to right, rgba(178, 114, 18, 0.7), rgba(228, 225, 9, 0.7));
+    padding: 20px;
+}
+
+#bcm-pl {
+    font-size: 60px;
+    color:rgb(184, 18, 18);
+}
+
+/* Style the footer */
+footer {
+    background-color: red;
+    color: yellow;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Add some spacing below the sections */
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#services h2 {
+    font-family: "brush script mt", cursive;
+    font-size: 90px;
+    color:rgb(184, 18, 18); 
+}
+
+#services ul {
+    font-size: 35px;
+    color:yellow;
+}
+
+#contact h2 {
+    font-family: "brush script mt", cursive;
+    font-size: 90px;
+    color:rgb(184, 18, 18); 
+}
+
+#contact p {
+    font-size: 35px;
+    color:yellow;
+}
